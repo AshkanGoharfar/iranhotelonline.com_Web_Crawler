@@ -1,6 +1,6 @@
 # iranhotelonline.com_Web_Crawler
 
-Download and install webdriverchrome. You have to pay attention to the version of the webdriverchrome and your chrome browser.
+Download and install webdriverchrome. You need to pay attention to the version of the webdriverchrome and your chrome browser.
 
 Next, change the path of the webdriverchrome in Data/Metadata.txt
 
