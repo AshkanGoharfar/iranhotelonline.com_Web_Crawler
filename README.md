@@ -2,14 +2,7 @@
 
 Download and install webdriverchrome. You have to pay attention to the version of the webdriverchrome and your chrome browser.
 
-Next, change the path of the webdriverchrome in Crawl_seed_pages.py and Crawl_non_seed_pages.py
-
-In both files you will find:
-
-driver = webdriver.Chrome(
-        executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
-
-you should change this path.
+Next, change the path of the webdriverchrome in Data/Metadata.txt
 
 
 # First Step:
