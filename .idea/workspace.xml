@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55f4a670-0d60-497a-8262-a123f3f99636" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Data/Metadata.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawl_non_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_non_seed_pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawl_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_seed_pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Iran Hotels Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Iran Hotels Data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Seed_pages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Seed_pages.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +190,7 @@
       <workItem from="1619112211744" duration="1756000" />
       <workItem from="1619532330966" duration="20171000" />
       <workItem from="1619600376816" duration="1679000" />
-      <workItem from="1619603511375" duration="2394000" />
+      <workItem from="1619603511375" duration="3085000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of web crawler using pipeline">
       <created>1619600507475</created>
@@ -223,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619602014336</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementation of web crawler using pipeline and multiprocessing in order to crawl seed and non-seed pages">
+      <created>1619606529641</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619606529641</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,13 +236,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementation of web crawler using pipeline" />
     <MESSAGE value="Implementation of web crawler using pipeline and multiprocessing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of web crawler using pipeline and multiprocessing" />
+    <MESSAGE value="Implementation of web crawler using pipeline and multiprocessing in order to crawl seed and non-seed pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of web crawler using pipeline and multiprocessing in order to crawl seed and non-seed pages" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="239" y="0" key="CommitChangelistDialog2" timestamp="1619602013314">
+    <state x="239" y="0" key="CommitChangelistDialog2" timestamp="1619606528792">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="239" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1619602013314" />
+    <state x="239" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1619606528792" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1618566584948">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -259,10 +264,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619606452876" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1619602020528">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1619606567724">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1619602020528" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1619606567724" />
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1619603703612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
