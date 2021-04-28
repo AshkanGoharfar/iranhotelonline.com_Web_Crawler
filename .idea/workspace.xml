@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55f4a670-0d60-497a-8262-a123f3f99636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pipeline_Crawl_Seed_Pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawl_non_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_non_seed_pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawl_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_seed_pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Iran Hotels Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Iran Hotels Data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Seed_pages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Seed_pages.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,42 +192,61 @@
       <workItem from="1618549182903" duration="24329000" />
       <workItem from="1619112211744" duration="1756000" />
       <workItem from="1619532330966" duration="20171000" />
-      <workItem from="1619600376816" duration="104000" />
+      <workItem from="1619600376816" duration="1016000" />
     </task>
+    <task id="LOCAL-00001" summary="Implementation of web crawler using pipeline">
+      <created>1619600507475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619600507475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implementation of web crawler using pipeline">
+      <created>1619600546571</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619600546571</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implementation of web crawler using pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of web crawler using pipeline" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="239" y="0" key="CommitChangelistDialog2" timestamp="1619600506304">
+    <state x="239" y="0" key="CommitChangelistDialog2" timestamp="1619601389350">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="239" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1619600506304" />
+    <state x="239" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1619601389350" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1618566584948">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1618566584948" />
-    <state width="1237" height="213" key="GridCell.Tab.0.bottom" timestamp="1619562055636">
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom" timestamp="1619601372781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
-    <state width="1237" height="213" key="GridCell.Tab.0.center" timestamp="1619562055636">
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619601372781" />
+    <state width="1237" height="213" key="GridCell.Tab.0.center" timestamp="1619601372781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
-    <state width="1237" height="213" key="GridCell.Tab.0.left" timestamp="1619562055636">
+    <state width="1237" height="213" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619601372781" />
+    <state width="1237" height="213" key="GridCell.Tab.0.left" timestamp="1619601372781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
-    <state width="1237" height="213" key="GridCell.Tab.0.right" timestamp="1619562055636">
+    <state width="1237" height="213" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619601372781" />
+    <state width="1237" height="213" key="GridCell.Tab.0.right" timestamp="1619601372781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1619600517061">
+    <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619601372781" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1619600564638">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1619600517061" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1619600564638" />
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1619600378213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -245,10 +261,10 @@
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1615043985969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Crawl_non_seed_pages.coverage" NAME="Crawl_non_seed_pages Coverage Results" MODIFIED="1618668483624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$test_multiprocessing.coverage" NAME="test_multiprocessing Coverage Results" MODIFIED="1619550076640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Pipeline_Crawl_non_Seed_Pages.coverage" NAME="Pipeline_Crawl_non_Seed_Pages Coverage Results" MODIFIED="1619558902583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Pipeline_Crawl_non_Seed_Pages.coverage" NAME="Pipeline_Crawl_non_Seed_Pages Coverage Results" MODIFIED="1619601299241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$Crawl_seed_pages.coverage" NAME="Crawl_seed_pages Coverage Results" MODIFIED="1614837095299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Crawl_seed_pages.coverage" NAME="Crawl_seed_pages Coverage Results" MODIFIED="1619551183313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Pipeline_Crawl_Seed_Pages.coverage" NAME="Pipeline_Crawl_Seed_Pages Coverage Results" MODIFIED="1619556971199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Pipeline_Crawl_Seed_Pages.coverage" NAME="Pipeline_Crawl_Seed_Pages Coverage Results" MODIFIED="1619600687187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$Crawl_non_seed_pages.coverage" NAME="Crawl_non_seed_pages Coverage Results" MODIFIED="1614883523978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$Main.coverage" NAME="Main Coverage Results" MODIFIED="1614883632804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Main.coverage" NAME="Main Coverage Results" MODIFIED="1619555567801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

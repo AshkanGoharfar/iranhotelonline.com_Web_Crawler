@@ -16,39 +16,16 @@ def chunks(l, n):
 
 
 def do_job(job_id, data_slice):
-    print('In job')
     for city in data_slice:
-        print(city)
         crawl_city_page(city)
-
-
-# def dispatch_jobs(data, job_number):
-#     total = len(data)
-#     chunk_size = total / job_number
-#     slice = chunks(data, int(chunk_size))
-#     jobs = []
-#     for i, s in enumerate(slice):
-#         # print('i, s: ', i, s)
-#         j = multiprocessing.Process(target=do_job, args=(i, s))
-#         jobs.append(j)
-#     for j in jobs:
-#         j.start()
 
 
 def crawl_seeds():
     f = open('Data/Seed_pages.csv', 'w+', encoding='utf-8')
     f.write('hotel,city,comment_page_url,hotel_star')
     f.close()
-    # city = crawl_home_page()
-    # print('the city')
-    # print(city)
     df = pd.read_csv('Data/Early_seed_pages.csv')
     cities = df.values.tolist()
-    # for i in range(8, len(cities)):
-    #     each_city_url = cities[i]
-    #     # urls = crawl_city_page(each_city_url)
-    #     crawl_city_page(each_city_url)
-
     return cities
 
 
@@ -192,7 +169,4 @@ def store_seeds_csv(urls):
         f.write('\n' + str(urls[i][2]) + ',' + str(urls[i][1]) + ',' + str(urls[i][0]))
     f.close()
 
-
 # crawl_seeds('https://www.iranhotelonline.com/iran-hotels/')
-
-

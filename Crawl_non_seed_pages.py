@@ -3,13 +3,12 @@ from bs4 import BeautifulSoup
 from lxml import html
 import requests
 from selenium import webdriver
-
 import time
-
-start_time = time.time()
 
 
 def crawl_url(my_urls):
+    start_time = time.time()
+
     list_of_data = []
     driver = webdriver.Chrome(
         executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
@@ -24,13 +23,16 @@ def crawl_url(my_urls):
         new_item = item.split('\n')
         for term in new_item:
             initialed_data.append(term)
-    # for item in initialed_data:
-    #     print(item)
-    comment = get_comment(initialed_data)
-    # for item in comment:
-    #     print(comment[item])
+    try:
+        comment = get_comment(initialed_data)
+    except:
+        f = open('Data/Failed Crawled Iran Hotels Data.csv', 'a', encoding='utf-8')
+        f.write(
+            '\n' + str(my_urls))
+        f.close()
+        comment = []
+
     driver.close()
-    # print(comment)
     print("--- %s seconds ---" % (time.time() - start_time))
     return comment
 
@@ -55,7 +57,6 @@ def get_comment(list_of_data):
                 subject = list_of_data[i].split('"subject-review">')[1].split('</span>')[0]
                 score = list_of_data[i - 1].split('"score-badge">')[1].split('</span>')[0].split(' ')[0]
                 comment_time = list_of_data[i - 6].split('<label>')[1].split('</label>')[0].split('تاریخ درج نظر : ')[1]
-                # print(list_of_data[i - 13].split('<label>')[1].split('</label>')[0])
                 stay_duration = \
                     list_of_data[i - 13].split('<label>')[1].split('</label>')[0].split(' شب اقامت  ')[0]
                 permanent_residence = list_of_data[i - 17].split('<label>')[1].split('</label>')[0]
@@ -66,21 +67,3 @@ def get_comment(list_of_data):
                               'stay_duration': stay_duration, 'permanent_residence': permanent_residence,
                               'travel_type': travel_type, 'enter_time': enter_time}
     return comment
-
-
-import pandas as pd
-
-# df = pd.read_csv('Data/Seed_pages.csv')
-# print(df['comment_page_url'][8])
-# crawl_url(df['comment_page_url'][8])
-# for url in df['comment_page_url']:
-#     flag_end_pages = 0
-#     page_counter = 1
-#     while flag_end_pages == 0:
-#         print(page_counter)
-#         print(url)
-#         crawl_url(url + '?p=' + str(page_counter))
-#         page_counter += 1
-#
-# crawl_url(
-#     'https://www.iranhotelonline.com/tehran-hotels/%D9%87%D8%AA%D9%84-%D8%A7%D8%B3%D9%BE%DB%8C%D9%86%D8%A7%D8%B3-%D9%BE%D8%A7%D9%84%D8%A7%D8%B3/%D9%86%D8%B8%D8%B1%D8%A7%D8%AA/?p=3')
