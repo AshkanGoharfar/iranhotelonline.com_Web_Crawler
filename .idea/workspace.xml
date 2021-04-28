@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55f4a670-0d60-497a-8262-a123f3f99636" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawl_non_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_non_seed_pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawl_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_seed_pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Seed_pages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Seed_pages.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
       <workItem from="1619112211744" duration="1756000" />
       <workItem from="1619532330966" duration="20171000" />
       <workItem from="1619600376816" duration="1679000" />
-      <workItem from="1619603511375" duration="4556000" />
+      <workItem from="1619603511375" duration="4797000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of web crawler using pipeline">
       <created>1619600507475</created>
@@ -236,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619613369068</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementation of Selenium Browser Automation">
+      <created>1619618042087</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619618042087</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,13 +250,14 @@
     <MESSAGE value="Implementation of web crawler using pipeline" />
     <MESSAGE value="Implementation of web crawler using pipeline and multiprocessing" />
     <MESSAGE value="Implementation of web crawler using pipeline and multiprocessing in order to crawl seed and non-seed pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of web crawler using pipeline and multiprocessing in order to crawl seed and non-seed pages" />
+    <MESSAGE value="Implementation of Selenium Browser Automation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Selenium Browser Automation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="199" y="0" key="CommitChangelistDialog2" timestamp="1619613368265">
+    <state x="199" y="0" key="CommitChangelistDialog2" timestamp="1619618041205">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="199" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1619613368265" />
+    <state x="199" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1619618041205" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1618566584948">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
