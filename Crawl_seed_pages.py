@@ -34,10 +34,15 @@ def crawl_home_page():
     f.write('city_name,city_url')
     f.close()
 
+    with open('data.txt', 'r') as file:
+        webdriver_chrome = file.read().replace('\n', '')
     list_of_data = []
+    # print(webdriver_chrome)
+    a = r"C:\ProgramData\chocolatey\bin\chromedriver.exe"
 
     driver = webdriver.Chrome(
-        executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
+        executable_path=webdriver_chrome)
+    # r"C:\ProgramData\chocolatey\bin\chromedriver.exe"
     driver.get('https://www.iranhotelonline.com/iran-hotels/')
     html = driver.page_source
     soup = BeautifulSoup(html)
@@ -79,28 +84,20 @@ def crawl_home_page():
 
 def crawl_city_page(city_url):
     comm_page = []
-    # print('city url: ')
-    # print(city_url)
-    # flag_page = 0
-    # page_counter_1 = 1
-    # for k in range(0,1):
-    # for k in range(7, 9):
-    # for k in range(len(city_url)):
     flag_page = 0
     page_counter_1 = 1
     while flag_page == 0:
-        # try:
         list_of_data = []
+
+        with open('Data/Metadata.txt', 'r') as file:
+            webdriver_chrome = file.read()
         driver = webdriver.Chrome(
-            executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
-        # print('here')
-        # print(city_url[0])
+            executable_path=webdriver_chrome)
+
+        # driver = webdriver.Chrome(
+        #     executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
 
         city_url_page = city_url[0] + '?p=' + str(page_counter_1)
-        # city_url_page = city_url[0]
-        # print(city_url_page)
-        # print('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&')
-        # driver.get(city_url[0])
         driver.get(city_url_page)
         html = driver.page_source
         soup = BeautifulSoup(html)
@@ -151,9 +148,6 @@ def crawl_city_page(city_url):
                 f = open('Data/Seed_pages.csv', 'a', encoding='utf-8')
                 f.write('\n' + str(a[2]) + ',' + str(a[1]) + ',' + str(a[0]) + ',' + str(a[3]))
                 f.close()
-        #     except:
-        #         print(city_url_page, city_url[0], city_url[1], initialed_data[i])
-        # print('((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((')
         driver.close()
         page_counter_1 += 1
         if num_of_items_in_page < 10:

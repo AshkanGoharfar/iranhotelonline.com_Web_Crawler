@@ -10,8 +10,14 @@ def crawl_url(my_urls):
     start_time = time.time()
 
     list_of_data = []
+
+    with open('Data/Metadata.txt', 'r') as file:
+        webdriver_chrome = file.read()
     driver = webdriver.Chrome(
-        executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
+        executable_path=webdriver_chrome)
+
+    # driver = webdriver.Chrome(
+    #     executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
     driver.get(my_urls)
     html = driver.page_source
     soup = BeautifulSoup(html)
