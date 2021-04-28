@@ -23,6 +23,5 @@ def run_seed_pipeline(num_of_threads):
         dispatch_jobs(cities, num_of_threads)
 
 
-
 num_of_threads = 2
 run_seed_pipeline(num_of_threads)
