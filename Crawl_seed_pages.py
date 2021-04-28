@@ -6,6 +6,11 @@ from selenium import webdriver
 from urllib.parse import quote
 import pandas as pd
 import multiprocessing
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.expected_conditions import presence_of_element_located
 
 
 # multi-processing
@@ -38,47 +43,52 @@ def crawl_home_page():
         webdriver_chrome = file.read().replace('\n', '')
     list_of_data = []
     # print(webdriver_chrome)
-    a = r"C:\ProgramData\chocolatey\bin\chromedriver.exe"
 
-    driver = webdriver.Chrome(
-        executable_path=webdriver_chrome)
-    # r"C:\ProgramData\chocolatey\bin\chromedriver.exe"
-    driver.get('https://www.iranhotelonline.com/iran-hotels/')
-    html = driver.page_source
-    soup = BeautifulSoup(html)
-    for tag in soup.find_all('div'):
-        if tag not in list_of_data:
-            list_of_data.append(str(tag))
+    # This example requires Selenium WebDriver 3.13 or newer
+    with webdriver.Chrome() as driver:
+        wait = WebDriverWait(driver, 10)
 
-    initialed_data = []
-    for item in list_of_data:
-        new_item = item.split('\n')
-        for term in new_item:
-            initialed_data.append(term)
-    list_of_data = initialed_data
-    # f = open('Data/Seed_pages.csv', 'w+', encoding='utf-8')
-    # f.write('hotel,city,comment_page_url,hotel_star')
-    # f.close()
-    web_links = []
-    iterated = []
-    for i in range(len(list_of_data)):
-        if '<a class="city-name" href="/' in list_of_data[i] and list_of_data[i] not in iterated:
-            web_links.append(['https://www.iranhotelonline.com' + list_of_data[i].split('href="')[1].split('">')[0],
-                              list_of_data[i].split('/">')[1].split('</a>')[0].split('هتل های ')[1]])
-            iterated.append(list_of_data[i])
+        # a = r"C:\ProgramData\chocolatey\bin\chromedriver.exe"
+        #
+        # driver = webdriver.Chrome(
+        #     executable_path=webdriver_chrome)
+        # r"C:\ProgramData\chocolatey\bin\chromedriver.exe"
+        driver.get('https://www.iranhotelonline.com/iran-hotels/')
+        html = driver.page_source
+        soup = BeautifulSoup(html)
+        for tag in soup.find_all('div'):
+            if tag not in list_of_data:
+                list_of_data.append(str(tag))
+
+        initialed_data = []
+        for item in list_of_data:
+            new_item = item.split('\n')
+            for term in new_item:
+                initialed_data.append(term)
+        list_of_data = initialed_data
+        # f = open('Data/Seed_pages.csv', 'w+', encoding='utf-8')
+        # f.write('hotel,city,comment_page_url,hotel_star')
+        # f.close()
+        web_links = []
+        iterated = []
+        for i in range(len(list_of_data)):
+            if '<a class="city-name" href="/' in list_of_data[i] and list_of_data[i] not in iterated:
+                web_links.append(['https://www.iranhotelonline.com' + list_of_data[i].split('href="')[1].split('">')[0],
+                                  list_of_data[i].split('/">')[1].split('</a>')[0].split('هتل های ')[1]])
+                iterated.append(list_of_data[i])
+                f = open('Data/Early_seed_pages.csv', 'a', encoding='utf-8')
+                f.write('\n' + 'https://www.iranhotelonline.com' + list_of_data[i].split('href="')[1].split('">')[0] + ',' +
+                        list_of_data[i].split('/">')[1].split('</a>')[0].split('هتل های ')[1])
+                f.close()
+        for i in range(2062, 2295):
             f = open('Data/Early_seed_pages.csv', 'a', encoding='utf-8')
-            f.write('\n' + 'https://www.iranhotelonline.com' + list_of_data[i].split('href="')[1].split('">')[0] + ',' +
-                    list_of_data[i].split('/">')[1].split('</a>')[0].split('هتل های ')[1])
+            f.write('\n' + 'https://www.iranhotelonline.com' + list_of_data[i].split('"></i><a href="')[1].split('">')[
+                0] + ',' + list_of_data[i].split('/">')[1].split('</a> <')[0].split('هتل های ')[1])
             f.close()
-    for i in range(2062, 2295):
-        f = open('Data/Early_seed_pages.csv', 'a', encoding='utf-8')
-        f.write('\n' + 'https://www.iranhotelonline.com' + list_of_data[i].split('"></i><a href="')[1].split('">')[
-            0] + ',' + list_of_data[i].split('/">')[1].split('</a> <')[0].split('هتل های ')[1])
-        f.close()
-        web_links.append(
-            ['https://www.iranhotelonline.com' + list_of_data[i].split('"></i><a href="')[1].split('">')[0],
-             list_of_data[i].split('/">')[1].split('</a> <')[0].split('هتل های ')[1]])
-    driver.close()
+            web_links.append(
+                ['https://www.iranhotelonline.com' + list_of_data[i].split('"></i><a href="')[1].split('">')[0],
+                 list_of_data[i].split('/">')[1].split('</a> <')[0].split('هتل های ')[1]])
+        driver.close()
     return web_links
 
 
@@ -152,7 +162,6 @@ def crawl_city_page(city_url):
         page_counter_1 += 1
         if num_of_items_in_page < 10:
             flag_page = 1
-
     # return comm_page
 
 

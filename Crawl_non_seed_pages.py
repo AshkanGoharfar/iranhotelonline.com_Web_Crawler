@@ -4,6 +4,7 @@ from lxml import html
 import requests
 from selenium import webdriver
 import time
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 def crawl_url(my_urls):
@@ -11,35 +12,38 @@ def crawl_url(my_urls):
 
     list_of_data = []
 
-    with open('Data/Metadata.txt', 'r') as file:
-        webdriver_chrome = file.read()
-    driver = webdriver.Chrome(
-        executable_path=webdriver_chrome)
-
+    # with open('Data/Metadata.txt', 'r') as file:
+    #     webdriver_chrome = file.read()
     # driver = webdriver.Chrome(
-    #     executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
-    driver.get(my_urls)
-    html = driver.page_source
-    soup = BeautifulSoup(html)
-    for tag in soup.find_all('div'):
-        if tag not in list_of_data:
-            list_of_data.append(str(tag))
-    initialed_data = []
-    for item in list_of_data:
-        new_item = item.split('\n')
-        for term in new_item:
-            initialed_data.append(term)
-    try:
-        comment = get_comment(initialed_data)
-    except:
-        f = open('Data/Failed Crawled Iran Hotels Data.csv', 'a', encoding='utf-8')
-        f.write(
-            '\n' + str(my_urls))
-        f.close()
-        comment = []
+    #     executable_path=webdriver_chrome)
 
-    driver.close()
-    print("--- %s seconds ---" % (time.time() - start_time))
+    with webdriver.Chrome() as driver:
+        wait = WebDriverWait(driver, 10)
+
+        # driver = webdriver.Chrome(
+        #     executable_path=r"C:\ProgramData\chocolatey\bin\chromedriver.exe")
+        driver.get(my_urls)
+        html = driver.page_source
+        soup = BeautifulSoup(html)
+        for tag in soup.find_all('div'):
+            if tag not in list_of_data:
+                list_of_data.append(str(tag))
+        initialed_data = []
+        for item in list_of_data:
+            new_item = item.split('\n')
+            for term in new_item:
+                initialed_data.append(term)
+        try:
+            comment = get_comment(initialed_data)
+        except:
+            f = open('Data/Failed Crawled Iran Hotels Data.csv', 'a', encoding='utf-8')
+            f.write(
+                '\n' + str(my_urls))
+            f.close()
+            comment = []
+
+        driver.close()
+        print("--- %s seconds ---" % (time.time() - start_time))
     return comment
 
 
