@@ -134,5 +134,131 @@
 #
 #
 
-import os
-os.environ["PATH"] += os.pathsep + 'D:/Program Files (x86)/Graphviz2.38/bin/'
+# import os
+# os.environ["PATH"] += os.pathsep + 'D:/Program Files (x86)/Graphviz2.38/bin/'
+
+
+
+
+
+
+
+
+# import pandas as pd
+# from Crawl_non_seed_pages import *
+#
+# df = pd.read_csv('Data/Seed_pages.csv')
+#
+# # category -> comment_page_url
+#
+# f = open('Data/Iran Hotels Data.csv', 'w+')
+# f.write('hotel,city,subject,comment_time,enter_time,stay_duration,permanent_residence,travel_type,comment,user_score,')
+#
+# f.close()
+#
+# # print(df)
+# for i in range(len(df['comment_page_url'])):
+#     # print(df['comment_page_url'][i])
+#     comment = crawl_url(df['comment_page_url'][i])
+#     print(comment)
+#     for key in comment:
+#         f = open('Data/Iran Hotels Data.csv', 'a', encoding='utf-8')
+#         # f.write('hotel,city,subject,time,comment,user_score')
+#         f.write('\n' + str(df['hotel'][i]) + ',' + str(df['city'][i]) + ',' + str(comment[key]['subject']) + ',' + str(
+#             comment[key][
+#                 'comment_time']) + ',' + str(comment[key]['enter_time']) + ',' + str(
+#             comment[key]['stay_duration']) + ',' + str(comment[key]['permanent_residence']) + ',' + str(
+#             comment[key]['travel_type']) + ',' + str(comment[key]['comment']) + ',' + str(comment[key]['user_score']))
+#         f.close()
+#         # 'comment': comm, 'subject': subject, 'user_score': score, 'time': time
+#     # f.close()
+
+
+
+import pandas as pd
+
+# # df = pd.read_csv('Data/Seed_pages.csv')
+# df = pd.read_csv('Data/Iran Hotels Data.csv')
+# # df['comment_time']
+# for item in df:
+#
+#     print(item)
+#     print(df[item])
+#     print('LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+#
+
+
+# import time
+#
+#
+# def basic_func(x):
+#     if x == 0:
+#         return 'zero'
+#     elif x % 2 == 0:
+#         return 'even'
+#     else:
+#         return 'odd'
+#
+#
+# starttime = time.time()
+# for i in range(0, 10):
+#     y = i * i
+#     time.sleep(2)
+#     print('{} squared results in a/an {} number'.format(i, basic_func(y)))
+#
+# print('That took {} seconds'.format(time.time() - starttime))
+
+# import time
+# import multiprocessing
+#
+#
+# def basic_func(x):
+#     if x == 0:
+#         return 'zero'
+#     elif x % 2 == 0:
+#         return 'even'
+#     else:
+#         return 'odd'
+#
+#
+# def multiprocessing_func(x):
+#     y = x * x
+#     # time.sleep(2)
+#     print('{} squared results in a/an {} number'.format(x, basic_func(y)))
+#
+#
+# if __name__ == '__main__':
+#     starttime = time.time()
+#     processes = []
+#     for i in range(0, 10):
+#         p = multiprocessing.Process(target=multiprocessing_func, args=(i,))
+#         processes.append(p)
+#         p.start()
+#
+#     for process in processes:
+#         process.join()
+#
+#     print('That took {} seconds'.format(time.time() - starttime))
+#
+
+
+
+from sklearn.pipeline import make_pipeline
+import dask_ml.model_selection
+
+def puls(a):
+    a *= a
+    return a
+
+
+param_grid = {
+    'a': [0.1, 1, 10],
+}
+
+# X, y = make_classification(n_samples=10_000)
+
+pipe = make_pipeline(
+    puls()
+)
+gs = dask_ml.model_selection.GridSearchCV(pipe, param_grid, scheduler='multiprocessing')
+

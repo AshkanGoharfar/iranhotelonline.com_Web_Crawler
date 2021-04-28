@@ -4,6 +4,10 @@ from lxml import html
 import requests
 from selenium import webdriver
 
+import time
+
+start_time = time.time()
+
 
 def crawl_url(my_urls):
     list_of_data = []
@@ -23,10 +27,11 @@ def crawl_url(my_urls):
     # for item in initialed_data:
     #     print(item)
     comment = get_comment(initialed_data)
-    for item in comment:
-        print(comment[item])
+    # for item in comment:
+    #     print(comment[item])
     driver.close()
     # print(comment)
+    print("--- %s seconds ---" % (time.time() - start_time))
     return comment
 
 
@@ -63,5 +68,19 @@ def get_comment(list_of_data):
     return comment
 
 
-crawl_url(
-    'https://www.iranhotelonline.com/tehran-hotels/%D9%87%D8%AA%D9%84-%D8%A7%D8%B3%D9%BE%DB%8C%D9%86%D8%A7%D8%B3-%D9%BE%D8%A7%D9%84%D8%A7%D8%B3/%D9%86%D8%B8%D8%B1%D8%A7%D8%AA/?p=3')
+import pandas as pd
+
+# df = pd.read_csv('Data/Seed_pages.csv')
+# print(df['comment_page_url'][8])
+# crawl_url(df['comment_page_url'][8])
+# for url in df['comment_page_url']:
+#     flag_end_pages = 0
+#     page_counter = 1
+#     while flag_end_pages == 0:
+#         print(page_counter)
+#         print(url)
+#         crawl_url(url + '?p=' + str(page_counter))
+#         page_counter += 1
+#
+# crawl_url(
+#     'https://www.iranhotelonline.com/tehran-hotels/%D9%87%D8%AA%D9%84-%D8%A7%D8%B3%D9%BE%DB%8C%D9%86%D8%A7%D8%B3-%D9%BE%D8%A7%D9%84%D8%A7%D8%B3/%D9%86%D8%B8%D8%B1%D8%A7%D8%AA/?p=3')

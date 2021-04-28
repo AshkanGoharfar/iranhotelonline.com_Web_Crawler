@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55f4a670-0d60-497a-8262-a123f3f99636" name="Default Changelist" comment="" />
+    <list default="true" id="55f4a670-0d60-497a-8262-a123f3f99636" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pipeline_Crawl_Seed_Pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawl_non_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_non_seed_pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawl_seed_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawl_seed_pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Iran Hotels Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Iran Hotels Data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Seed_pages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Seed_pages.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1pFEinjVYfdcwPpqRuO6erOzsKk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,31 +37,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Universities/All Codes/New folder/Gmail Composer" />
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="Crawl_non_seed_pages" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iranhotelonline.com_Web_Crawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawl_non_seed_pages.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Pipeline_Crawl_non_Seed_Pages">
     <configuration name="Crawl_seed_pages" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iranhotelonline.com_Web_Crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,7 +75,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Ashkan\Desktop\Momtazi\iranhotelonline.com_Web_Crawler\Pipeline_Crawl_non_Seed_Pages.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Pipeline_Crawl_Seed_Pages" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iranhotelonline.com_Web_Crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,7 +97,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pipeline_Crawl_Seed_Pages.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Pipeline_Crawl_non_Seed_Pages" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iranhotelonline.com_Web_Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pipeline_Crawl_non_Seed_Pages.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_multiprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iranhotelonline.com_Web_Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_multiprocessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,10 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Pipeline_Crawl_non_Seed_Pages" />
+        <item itemvalue="Python.Pipeline_Crawl_Seed_Pages" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.Crawl_non_seed_pages" />
         <item itemvalue="Python.Crawl_seed_pages" />
+        <item itemvalue="Python.test_multiprocessing" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +187,15 @@
       <workItem from="1615211310699" duration="29000" />
       <workItem from="1615299728876" duration="132000" />
       <workItem from="1615300754443" duration="355000" />
+      <workItem from="1615448785712" duration="468000" />
+      <workItem from="1615493931728" duration="1427000" />
+      <workItem from="1615529827919" duration="1082000" />
+      <workItem from="1615565401743" duration="3910000" />
+      <workItem from="1618253575582" duration="892000" />
+      <workItem from="1618549182903" duration="24329000" />
+      <workItem from="1619112211744" duration="1756000" />
+      <workItem from="1619532330966" duration="20171000" />
+      <workItem from="1619600376816" duration="104000" />
     </task>
     <servers />
   </component>
@@ -157,39 +203,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1615211336926">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1618566584948">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615211336926" />
-    <state width="1237" height="213" key="GridCell.Tab.0.bottom" timestamp="1615048112673">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1618566584948" />
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom" timestamp="1619562055636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615048112673" />
-    <state width="1237" height="213" key="GridCell.Tab.0.center" timestamp="1615048112673">
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
+    <state width="1237" height="213" key="GridCell.Tab.0.center" timestamp="1619562055636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615048112673" />
-    <state width="1237" height="213" key="GridCell.Tab.0.left" timestamp="1615048112672">
+    <state width="1237" height="213" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
+    <state width="1237" height="213" key="GridCell.Tab.0.left" timestamp="1619562055636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615048112672" />
-    <state width="1237" height="213" key="GridCell.Tab.0.right" timestamp="1615048112673">
+    <state width="1237" height="213" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
+    <state width="1237" height="213" key="GridCell.Tab.0.right" timestamp="1619562055636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615048112673" />
-    <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1615300758649">
+    <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619562055636" />
+    <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1619600378213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1615300758649" />
-    <state x="297" y="-6" width="670" height="676" key="search.everywhere.popup" timestamp="1614794000288">
+    <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1619600378213" />
+    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup" timestamp="1618556600387">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="-6" width="670" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1614794000288" />
+    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1618556600387" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1619113383132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1615043985969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Crawl_non_seed_pages.coverage" NAME="Crawl_non_seed_pages Coverage Results" MODIFIED="1618668483624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$test_multiprocessing.coverage" NAME="test_multiprocessing Coverage Results" MODIFIED="1619550076640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Pipeline_Crawl_non_Seed_Pages.coverage" NAME="Pipeline_Crawl_non_Seed_Pages Coverage Results" MODIFIED="1619558902583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$Crawl_seed_pages.coverage" NAME="Crawl_seed_pages Coverage Results" MODIFIED="1614837095299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Crawl_seed_pages.coverage" NAME="Crawl_seed_pages Coverage Results" MODIFIED="1619551183313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Pipeline_Crawl_Seed_Pages.coverage" NAME="Pipeline_Crawl_Seed_Pages Coverage Results" MODIFIED="1619556971199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$Crawl_non_seed_pages.coverage" NAME="Crawl_non_seed_pages Coverage Results" MODIFIED="1614883523978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IranHotel_Crawler$Main.coverage" NAME="Main Coverage Results" MODIFIED="1614883632804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iranhotelonline_com_Web_Crawler$Main.coverage" NAME="Main Coverage Results" MODIFIED="1619555567801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
