@@ -2,22 +2,12 @@
 
 Download and install webdriverchrome. You need to pay attention to the version of the webdriverchrome and your chrome browser.
 
-Next, change the path of the webdriverchrome in Data/Metadata.txt
+Next, change path of the webdriverchrome which is in first line of Data/Metadata.txt. For this perpose, you should find path of chromedriver.exe in your pc and write it in the Metadata.txt.
 
+After that, change num_of_thread variable which is in the second line of Data/Metadata.txt. For this perpose, you should change the value in order to test your device capacity for execution of different number of threads.
 
-# First Step:
-1 - Open Pipeline_Crawl_Seed_Pages.py
+# Next Step:
 
-2 - initial num_of_threads
-
-3 - Run a function called run_seed_pipeline(num_of_thread)
-
-
-# Second Step:
-1 - Open Pipeline_Crawl_non_Seed_Pages.py
-
-2 - initial num_of_threads
-
-3 - Run a function called run_non_seed_pipeline(num_of_thread)
+Run Pipeline_Crawl_non_Seed_Pages.py
 
 
