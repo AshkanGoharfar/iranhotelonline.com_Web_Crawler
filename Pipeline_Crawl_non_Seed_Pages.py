@@ -81,5 +81,8 @@ def run_non_seed_pipeline(num_of_threads):
         dispatch_jobs(comments_urls, num_of_threads)
 
 
-num_of_threads = 2
-run_non_seed_pipeline(num_of_threads)
+if __name__ == '__main__':
+    with open('Data/Metadata.txt', 'r') as file:
+        num_of_threads = int(file.read().rsplit('\n')[1])
+    # num_of_threads = 2
+    run_non_seed_pipeline(num_of_threads)

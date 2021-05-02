@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
-
+import time
 
 # multi-processing
 
@@ -93,6 +93,7 @@ def crawl_home_page():
 
 
 def crawl_city_page(city_url):
+    time1 = time.time()
     comm_page = []
     flag_page = 0
     page_counter_1 = 1
@@ -100,7 +101,7 @@ def crawl_city_page(city_url):
         list_of_data = []
 
         with open('Data/Metadata.txt', 'r') as file:
-            webdriver_chrome = file.read()
+            webdriver_chrome = file.read().rsplit('\n')[0]
         driver = webdriver.Chrome(
             executable_path=webdriver_chrome)
 
@@ -162,6 +163,7 @@ def crawl_city_page(city_url):
         page_counter_1 += 1
         if num_of_items_in_page < 10:
             flag_page = 1
+    print('Elapsed time: ', time.time() - time1)
     # return comm_page
 
 
