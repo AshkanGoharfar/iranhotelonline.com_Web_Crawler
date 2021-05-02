@@ -67,14 +67,14 @@ def run_non_seed_pipeline(num_of_threads):
         df = pd.read_csv('Data/Seed_pages.csv')
         # category -> comment_page_url
 
-        f = open('Data/Iran Hotels Data.csv', 'w+')
-        f.write(
-            'hotel,city,subject,comment_time,enter_time,stay_duration,permanent_residence,travel_type,comment,user_score,hotel_star')
-        f.close()
-
-        f = open('Data/Failed Crawled Iran Hotels Data.csv', 'w+', encoding='utf-8')
-        f.write('url')
-        f.close()
+        # f = open('Data/Iran Hotels Data.csv', 'w+')
+        # f.write(
+        #     'hotel,city,subject,comment_time,enter_time,stay_duration,permanent_residence,travel_type,comment,user_score,hotel_star')
+        # f.close()
+        #
+        # f = open('Data/Failed Crawled Iran Hotels Data.csv', 'w+', encoding='utf-8')
+        # f.write('url')
+        # f.close()
 
         comments_urls = list(zip(df['comment_page_url'], df['hotel'], df['city'], df['hotel_star']))
         comments_urls = comments_urls[:len(comments_urls) - len(comments_urls) % num_of_threads]
