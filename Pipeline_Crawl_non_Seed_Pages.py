@@ -35,11 +35,9 @@ def crawl_comment_page(comment_detail):
     flag_end_pages = 0
     page_counter = 1
     while flag_end_pages == 0:
-        comment = crawl_url(comment_detail[0] + '?p=' + str(page_counter))
+        comment, flag_end_pages = crawl_url(comment_detail[0] + '?p=' + str(page_counter))
         if comment:
             page_counter += 1
-            if len(comment) < 19:
-                flag_end_pages = 1
             for key in comment:
                 if comment[key]['comment'] not in all_comments:
                     f = open('Data/Iran Hotels Data.csv', 'a', encoding='utf-8')
@@ -56,15 +54,14 @@ def crawl_comment_page(comment_detail):
                             comment[key]['user_score']) + ',' + str(comment_detail[3]))
                     f.close()
                     all_comments.append(comment[key]['comment'])
-                else:
-                    flag_end_pages = 1
 
 
 def run_non_seed_pipeline(num_of_threads):
     if __name__ == "__main__":
         print('num_of_threads : ', num_of_threads)
 
-        df = pd.read_csv('Data/Seed_pages.csv')
+        # df = pd.read_csv('Data/Seed_pages.csv')
+        df = pd.read_csv('Test Data/Seed_pages.csv')
         # category -> comment_page_url
 
         # f = open('Data/Iran Hotels Data.csv', 'w+')
@@ -84,5 +81,5 @@ def run_non_seed_pipeline(num_of_threads):
 if __name__ == '__main__':
     with open('Data/Metadata.txt', 'r') as file:
         num_of_threads = int(file.read().rsplit('\n')[1])
-    # num_of_threads = 2
+    # num_of_threads = 1
     run_non_seed_pipeline(num_of_threads)

@@ -35,7 +35,7 @@ def crawl_url(my_urls):
         for term in new_item:
             initialed_data.append(term)
     try:
-        comment = get_comment(initialed_data)
+        comment, flag_end = get_comment(initialed_data)
     except:
         f = open('Data/Failed Crawled Iran Hotels Data.csv', 'a', encoding='utf-8')
         f.write(
@@ -45,27 +45,42 @@ def crawl_url(my_urls):
 
     driver.close()
     print("--- %s seconds ---" % (time.time() - start_time))
-    return comment
+    return comment, flag_end
 
 
 def get_comment(list_of_data):
     comment = {}
     not_iterated = []
+    num_of_comments = 0
+    flag_end = 0
     for i in range(len(list_of_data)):
-        if '<span class="subject-review">' in list_of_data[i]:
+        if '<span id="ctl00_ContentPlaceHolder1_sp1"><nav><ul class="pagination">' in list_of_data[
+            i] and ' title="صفحه بعد"' not in list_of_data[i]:
+            flag_end = 1
+        elif '<span class="subject-review">' in list_of_data[i]:
             comm = ""
             flag = 0
             counter = i + 4
             while flag == 0:
-                if '</p>' not in list_of_data[counter]:
+                if '</p>' not in list_of_data[counter] and list_of_data[counter] != '':
                     comm = comm + list_of_data[counter]
                     counter += 1
+                    # print(list_of_data[counter - 1])
+                    # print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 else:
+                    # print(list_of_data[counter - 1])
+                    # print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
                     flag = 1
             comm = str(comm.split('   ')[-1])
-            if list_of_data[i] not in not_iterated:
-                not_iterated.append(list_of_data[i])
+            # print('list of data : ')
+            # print(list_of_data[i])
+
+            if comm not in not_iterated:
+                # print(list_of_data[i])
+                num_of_comments += 1
+                not_iterated.append(comm)
                 subject = list_of_data[i].split('"subject-review">')[1].split('</span>')[0]
+                # print(subject)
                 score = list_of_data[i - 1].split('"score-badge">')[1].split('</span>')[0].split(' ')[0]
                 comment_time = list_of_data[i - 6].split('<label>')[1].split('</label>')[0].split('تاریخ درج نظر : ')[1]
                 stay_duration = \
@@ -77,4 +92,7 @@ def get_comment(list_of_data):
                 comment[i] = {'comment': comm, 'subject': subject, 'user_score': score, 'comment_time': comment_time,
                               'stay_duration': stay_duration, 'permanent_residence': permanent_residence,
                               'travel_type': travel_type, 'enter_time': enter_time}
-    return comment
+    print('num_of_comments : ', num_of_comments)
+    return comment, flag_end
+
+# crawl_url('https://www.iranhotelonline.com/yazd-hotels/%D9%87%D8%AA%D9%84-%D8%AF%D8%A7%D8%AF/%D9%86%D8%B8%D8%B1%D8%A7%D8%AA/?p=3')
