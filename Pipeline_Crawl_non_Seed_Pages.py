@@ -60,8 +60,8 @@ def run_non_seed_pipeline(num_of_threads):
     if __name__ == "__main__":
         print('num_of_threads : ', num_of_threads)
 
-        # df = pd.read_csv('Data/Seed_pages.csv')
-        df = pd.read_csv('Test Data/Seed_pages.csv')
+        df = pd.read_csv('Data/Seed_pages.csv')
+        # df = pd.read_csv('Test Data/Seed_pages.csv')
         # category -> comment_page_url
 
         # f = open('Data/Iran Hotels Data.csv', 'w+')
@@ -81,5 +81,5 @@ def run_non_seed_pipeline(num_of_threads):
 if __name__ == '__main__':
     with open('Data/Metadata.txt', 'r') as file:
         num_of_threads = int(file.read().rsplit('\n')[1])
-    # num_of_threads = 1
+    # num_of_threads = 10
     run_non_seed_pipeline(num_of_threads)
